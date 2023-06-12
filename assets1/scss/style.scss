@@ -1,0 +1,89 @@
+/*----------------------------------------------------
+@File: Default Styles
+@Author:  themexriver
+@URL: https://themexriver.com/
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+---------------------------------------------------- */
+/*=====================================================================
+@Template Name: Archipress - Architecture HTML5 Template
+@Author: themexriver
+
+CSS Table of content:-
+
+1. Responsive Mixin 
+2. Template
+3. Global Area
+4. Services
+5. blog
+6. team
+7. testimonial
+8. roadmap
+9. our-mission 
+10. brand-slider
+11. video-popup
+12. footer
+13. header 
+14. mobile-menu
+
+=====================================================================*/
+
+/*(1)- Responsive */
+/*----------------------------------------------------*/
+@import "responsive";
+
+/*(2) Template **/ 
+
+@import "template";
+
+/*(3)- global area*/
+/*----------------------------------------------------*/
+@import "predefine";
+@import "variable";
+
+/*(4) Services */ 
+/*-----------------------------------------------*/ 
+@import "service";
+
+
+/*(5) blog */ 
+/*-----------------------------------------------*/ 
+@import "blog";
+
+/*(6) team */ 
+/*-----------------------------------------------*/ 
+@import "team";
+
+/*(7) testimonial */ 
+/*-----------------------------------------------*/ 
+@import "testimonial";
+
+/*(8) roadmap */ 
+/*-----------------------------------------------*/ 
+@import "roadmap";
+
+/*(9) our-mission */ 
+/*-----------------------------------------------*/ 
+@import "our-mission";
+
+/*(10) brand slider */ 
+/*-----------------------------------------------*/ 
+@import "brand-slider";
+
+/*(11) video popup */ 
+/*-----------------------------------------------*/ 
+@import "video-popup";
+
+/*(12) footer */ 
+/*-----------------------------------------------*/ 
+@import "footer";
+
+/*(13) header */ 
+/*-----------------------------------------------*/ 
+@import "header";
+
+/*(14) mobile-menu */ 
+/*-----------------------------------------------*/ 
+@import "mobile-menu";

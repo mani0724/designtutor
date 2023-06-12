@@ -1,0 +1,72 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 11/05/2021 05:52
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-left-arrow-1:before { content: "\f100"; }
+.flaticon-right-arrow:before { content: "\f101"; }
+.flaticon-music-player-play:before { content: "\f102"; }
+.flaticon-magnifying-glass:before { content: "\f103"; }
+.flaticon-shopping-bag:before { content: "\f104"; }
+.flaticon-close:before { content: "\f105"; }
+.flaticon-chevron-up:before { content: "\f106"; }
+.flaticon-down-arrow:before { content: "\f107"; }
+.flaticon-tick:before { content: "\f108"; }
+.flaticon-arrows:before { content: "\f109"; }
+.flaticon-right-arrow-1:before { content: "\f10a"; }
+.flaticon-left-arrow:before { content: "\f10b"; }
+.flaticon-document:before { content: "\f10c"; }
+.flaticon-clock:before { content: "\f10d"; }
+.flaticon-padlock:before { content: "\f10e"; }
+.flaticon-up-arrow:before { content: "\f10f"; }
+    
+    $font-Flaticon-left-arrow-1: "\f100";
+    $font-Flaticon-right-arrow: "\f101";
+    $font-Flaticon-music-player-play: "\f102";
+    $font-Flaticon-magnifying-glass: "\f103";
+    $font-Flaticon-shopping-bag: "\f104";
+    $font-Flaticon-close: "\f105";
+    $font-Flaticon-chevron-up: "\f106";
+    $font-Flaticon-down-arrow: "\f107";
+    $font-Flaticon-tick: "\f108";
+    $font-Flaticon-arrows: "\f109";
+    $font-Flaticon-right-arrow-1: "\f10a";
+    $font-Flaticon-left-arrow: "\f10b";
+    $font-Flaticon-document: "\f10c";
+    $font-Flaticon-clock: "\f10d";
+    $font-Flaticon-padlock: "\f10e";
+    $font-Flaticon-up-arrow: "\f10f";

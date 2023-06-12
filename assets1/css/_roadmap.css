@@ -1,0 +1,7 @@
+.arc5-roadmap-section {
+  background-color: #fff;
+  overflow: visible; }
+  .arc5-roadmap-section .container {
+    padding: 200px 0 110px 0;
+    margin-top: -100px;
+    z-index: 1000; }

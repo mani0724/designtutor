@@ -1,0 +1,12 @@
+.arc5-footer-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .arc5-footer-section .arc5-overlay-bg {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-bottom: 80px; }
+  .arc5-footer-section .arc5-f-top-shape {
+    background-color: #fff;
+    height: 150px;
+    width: 100%;
+    margin-top: 1px; }

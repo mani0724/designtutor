@@ -1,0 +1,156 @@
+//Our Mission 
+.arc5-our-mission {
+    padding: 100px  0 0 0;
+    position: relative; 
+    .arc5-style-shape {
+        position: absolute; 
+        top: 10px; 
+        left: 0;
+        width: 500px;
+        z-index: 2;
+        @include large-screen {
+            width: 400px;
+        }
+    }
+}
+.arc5-our-mission-left {
+    position: relative; 
+    @include medium-screen {
+        margin-bottom: 60px;
+    }
+    img.arc5-style-border {
+        position: absolute; 
+        top: -40px; 
+        left: -40px;
+        width: 300px;
+        z-index: 1;
+    }
+    .arc5-img-object-1 {
+        position: relative; 
+        z-index: 2;
+        margin-bottom: 20px;
+    }
+    .arc5-img-object-2 {
+        position: relative; 
+        z-index: 1;
+    }
+}
+.arc5-mission-right {
+    .arc5-title-area {
+        margin-bottom: 20px;
+    }
+    .arc5-mission-column {
+        span {
+            font-size: 50px; 
+            color: $primary-color; 
+        }
+    }
+    .arc5-mission-designation {
+        display: flex;
+        margin-top: 40px; 
+        align-items: center;
+        img {
+            width: 80px;
+            margin-right: 20px;
+        }
+    }
+    .arc5-template-btn {
+        margin-top: 40px;
+        a {
+            color: #ffffff;
+        }
+    }
+}
+.arc5-mission-countdown {
+    margin-top: 60px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    padding: 50px 30px;
+    @include portrait-phone {
+        padding-bottom: 10px;
+    }
+}
+.arc5-mission-list {
+    display: flex;
+    align-items: center;
+    padding-right: 60px;
+    @include portrait-phone {
+        display: block; 
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    .icon-container {
+        span {
+            font-size: 45px;
+            color: $primary-color;
+            margin-right: 20px;
+        }
+    }
+    .arc5-countdown {
+        position: relative;
+        margin-top: -15px;
+        display: inline-block;
+        span {
+            font-size: 72px; 
+            font-family: $heading-font; 
+            font-weight: 500;
+            margin-right: 20px;
+            @include portrait-phone {
+                font-size: 50px;
+            }
+        }
+        .mission-plus-icon {
+            position: absolute; 
+            top: 20px; 
+            right: -10px;
+            font-size: 24px;
+            display: inline-block;
+            @include portrait-phone {
+                top: 0;
+            }
+        }
+    }
+}
+.arc5-mission-experience {
+    background-color: $primary-color;
+    display: inline-block;
+    position: absolute; 
+    right: 0; 
+    bottom: 150px;
+    display: flex;
+    align-items: center;
+    width: 446px; 
+    height: 240px;
+    padding: 0 70px;
+    @include extra-large {
+        width: 300px; 
+        height: 150px;
+        padding: 0 40px;
+        bottom: 180px;
+    }
+    @include medium-screen {
+        position: initial;
+        margin-top: 100px;
+    }
+    span {
+        font-size: 30px; 
+        font-weight: 500; 
+        font-family: $heading-font; 
+        color: #fff; 
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        @include extra-large {
+            font-size: 24px;
+        }
+    }
+    .arc5-headline {
+        font-size: 90px;
+        margin-right: 20px;
+        letter-spacing: initial;
+        @include extra-large {
+            font-size: 60px;
+        }
+    }
+    
+}

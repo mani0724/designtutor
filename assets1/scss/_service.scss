@@ -1,0 +1,57 @@
+//Services 
+.arc5-service-section {
+    padding: 110px 0;
+    .section-title {
+        text-align: center; 
+        margin-bottom: 60px;
+    }
+    .owl-stage-outer {
+        height: 478px;
+        @include large-screen {
+            height: auto;
+        }
+    }
+    .owl-dots {
+        text-align: center;
+        margin-top: 30px;
+        .owl-dot {
+            display: inline-block; 
+            span {
+                width: 10px; 
+                height: 10px; 
+                background-color: $primary-color; 
+                border-radius: 50%; 
+                margin-right: 10px;
+                display: inline-block;
+            }
+        }
+        .active {
+            span {
+                width: 30px;
+                border-radius: 10px;
+            }
+        }
+    }
+    
+}
+.arc5-service-slider {
+    div.active {
+        .arc5-title-area {
+            animation: 1s fadeInDown;
+        }
+    }
+}
+.arc5-service-single-item {
+    position: relative;
+    .arc5-title-area {
+        position: absolute; 
+        bottom: -83px; 
+        right: 0; 
+        background-color: #fff;
+        width: 80%;
+        padding: 20px;
+        @include large-screen {
+            bottom: -1px;
+        }
+    }
+}

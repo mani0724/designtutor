@@ -1,0 +1,516 @@
+// header section startr here
+.header-section {
+	.header-top {
+		background: $primary-color;
+		.htop-area {
+			justify-content: space-between;
+		    align-items: center;
+			.htop-left {
+				.htop-information {
+					margin: 0;
+					@extend %flex;
+					justify-content: space-between;
+					li {
+						color: $white-color;
+						font-size: 15px;
+						margin-right: 40px;
+						padding: 8px 0;
+						&:last-child {
+							margin-right: 0px;
+						}
+						a {
+							color: $white-color;
+						}
+					}
+				}
+			}
+			.htop-right {
+				ul {
+					@extend %flex;
+					li {
+						a {
+							color: $white-color;
+							font-size: 14px;
+							margin-right: 15px;
+						}
+						&:last-child {
+							a {
+								margin-right: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.header-bottom {
+		.search-cart {
+			padding-left: 40px;
+			justify-content: flex-end;
+			@extend %flex;
+			li {
+				position: relative;
+				margin-right: 20px;
+				cursor: pointer;
+				&.cart {
+					span {
+						width: 20px;
+						height: 20px;
+						line-height: 20px;
+						border-radius: 50%;
+						background: $primary-color;
+						color: $white-color;
+					    display: inline-block;
+					    top: -5px;
+					    right: -15px;
+					    font-size: 12px;
+					    @extend %position;
+					}
+				}
+				i {
+					font-size: 20px;
+					color: $desc-color;
+					&::before {
+						font-weight: 900;
+					}
+				}
+			}
+			&.open {
+				li {
+					&.search {
+						.search-input {
+						    transform: scaleY(1);
+						}
+					}
+				}
+			}
+		}
+		&.transparent-bottom {
+			@extend %position;
+			z-index: 99;
+			width: 100%;
+			left: 0;
+			.primary-menu {
+				background: $white-color;
+				padding: 0 40px;
+			}
+		}
+		&.menu-fixed {
+			position: fixed !important;
+			top: 0;
+			width: 100%;
+			z-index: 999;
+			background: $white-color;
+			box-shadow: 0px -1px 4px 0px #f1f4f6;
+			.primary-menu {
+				box-shadow: none;
+				padding: 0;
+			}
+		}
+	}
+	&.style-2 {
+		.primary-menu {
+			box-shadow: none;
+		}
+	}
+	&.style-3 {
+		.header-bottom {
+			box-shadow: inset 0px -1px 4px 0px #f1f4f6;
+			position: relative;
+		}
+	}
+	&.style-4 {
+		.header-bottom {
+			@include breakpoint(lg) {
+				padding: 0 30px;
+			}
+			@include breakpoint(xl) {
+				padding: 0 90px;
+			}
+		}
+	}
+	&.style-5 {
+		.primary-menu .menu-area .logo {
+			@include breakpoint(lg) {
+				@include breakpoint(max-xl) {
+					width: 120px;
+				}
+			}
+		}
+		.menu-fixed .primary-menu .menu-area .logo {
+			@include breakpoint(lg) {
+				@include breakpoint(max-xl) {
+					width: 200px;
+				}
+			}
+		}
+	}
+}
+.primary-menu {
+	z-index: 11;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    background: transparent;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+    @include transition($transition);
+	.menu-area {
+		.logo {
+			padding: 12px 0;
+			outline: none;
+		}
+		ul.main-menu {
+			list-style: none;
+			margin: 0;
+		    justify-content: center;
+			li {
+				padding: 0;
+				position: relative;
+				&:last-child {
+					a {
+						margin-right: 0;
+					}
+				}
+				a {
+					color: $title-color;
+					padding: 38px 10px;
+					display: inline-block;
+					margin: 0 10px;
+					font-weight: 400;
+					position: relative;
+					text-transform: capitalize;
+					outline: none;
+					font-size: 18px;
+					font-family: $frank;
+					&.dd-icon-down {
+						padding-right: 30px;
+						&::after {
+							right: 10px;
+						}
+					}
+					&.active, &:hover {
+						color: $primary-color;
+					}
+				}
+				&.active>a {
+					color: $primary-color;
+				}
+				&:hover>a {
+					text-decoration: none;
+				}
+				ul {
+					margin: 0;
+					opacity: 0;
+					overflow: hidden;
+		    		visibility: hidden;
+					position: absolute;
+					background-color: $white-color;
+					width: 270px;
+					border-radius: 6px;
+    				@include transition($transition);
+					li {
+						position: relative;
+						list-style: none;
+						float: none;
+						padding-left: 30px;
+					    border-bottom: 1px solid $border-color;
+						&:last-child{
+					    	border-bottom: none;
+					    }
+						a {
+							padding: 11px 0;
+							color: $desc-color;
+						    margin: 0;
+						    display: block;
+						    text-align: left;
+						    padding-left: 0px;
+							@include transition($transition);
+						    &:hover{
+						    	background-color: $white-color;
+						    	padding-left: 10px;
+						    }
+						}
+						ul {
+							left: 100%;
+							top: -5px;
+						}
+					}
+				}
+				&:hover>{
+					ul {
+						z-index: 1;
+						opacity: 1;
+						overflow: visible;
+						visibility: visible;
+						transform: translateY(3px);
+					    box-shadow: 0 0 3px 0 rgba(0,0,0,0.1);
+					}
+				}
+			}
+			ul li.active {
+			    a {
+			    	color: $theme-color;
+			    }
+			}
+		}
+	}
+	&.menu-fixed {
+		position: fixed;
+		background: $white-color;
+		top: 0;
+		box-shadow: 0px 0px 2px rgba(0, 0, 0, .1) !important;
+	}
+}
+.search-area {
+	&.open {
+		.search-input {
+			transform: scaleY(1);
+		}
+	}
+	.search-input {
+	    margin: auto;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    background: $white-color;
+	    z-index: 1111111;
+	    text-align: center;
+	    -webkit-backface-visibility: hidden;
+	    backface-visibility: hidden;
+	    // transform-origin: top;
+	    transform: scaleY(0);
+	    @include transition($transition);
+	    .search-close {
+	    	width: 50px;
+	    	height: 50px;
+    	    top: 50px;
+			right: 50px;
+			cursor: pointer;
+			@extend %position;
+			&:hover {
+				span {
+					background: $theme-color;
+				}
+			}
+		    span {
+		    	width: 50px;
+		    	height: 1px;
+		    	background: $title-color;
+    	        top: 25px;
+    			right: 0px;
+    			@extend %position;
+    			@include transition($transition);
+    			&:nth-child(1) {
+    				transform: rotate(45deg);
+    			}
+    			&:nth-child(2) {
+    				transform: rotate(-45deg);
+    			}
+		    }
+	    }
+	    form {
+		    @extend %position;
+		    top: 50%;
+		    left: 50%;
+		    width: 75%;
+		    transform: translate(-50%,-50%);
+		    input {
+		    	width: 100%;
+		    	color: $desc-color;
+		    	border-radius: 0;
+		    	text-align: center;
+		    	font-size: $fs-h2;
+		    	border: none;
+		    	border-bottom: 1px solid rgba(37, 51, 101, 0.15);
+		    	&:hover, &:focus {
+		    		border-color: $primary-color;
+		    	}
+		    }
+	    }
+	}
+}
+
+.cart {
+	position: relative;
+	&:hover {
+		.cart-content {
+		    opacity: 1;
+		    visibility: visible;
+		    transform: translate(0);
+		    -webkit-transform: translate(0);
+		    -ms-transform: translate(0);
+		}
+	}
+	.cart-content {
+	    position: absolute;
+	    top: 100%;
+	    right: 0;
+	    opacity: 0;
+	    visibility: hidden;
+	    min-width: 270px;
+	    box-shadow: 0px 0px 10px rgba(212,212,212,.58);
+	    -webkit-transition: .4s ease-in-out;
+	    transition: .4s ease-in-out;
+	    transform: translateX(-10px);
+	    -webkit-transform: translateX(-10px);
+	    -ms-transform: translateX(-10px);
+	    z-index: 9;
+	    background-color: $white-color;
+	    padding: 15px;
+	    margin-top: 32px;
+	    cursor: auto;
+		.cart-item {
+		    border-bottom: 1px solid #e7e7e7;
+		    overflow: hidden;
+			padding: 10px 0;
+			position: relative;
+			@extend %flex;
+		    // &:first-child {
+			//     padding-top: 0;
+			// }
+			.cart-img {
+			    // float: left;
+			    display: block;
+			    margin-right: 14px;
+			    a {
+			    	img {
+			    		width: 50px;
+	    				height: 50px;
+			    	}
+			    }
+			}
+			.cart-des {
+			    // float: left;
+			    display: block;
+			    a {
+				    color: $title-color;
+				    font-size: 14px;
+				    text-decoration: none;
+				    font-weight: 600;
+					@include transition($transition);
+					&:hover {color: $primary-color;}
+				}
+				p {
+				    font-size: 14px;
+				    color: $title-color;
+				    font-weight: 700;
+				    margin-bottom: 4px;
+				    text-align: left;
+				}
+			}
+			.cart-btn {
+				@extend %position;
+				top: 15px;
+				right: 10px;
+			    a {
+				    width: 20px;
+				    height: 20px;
+				    text-align: center;
+				    display: block;
+				    line-height: 15px;
+				    border-radius: 3px;
+					@include transition($transition);
+					&:hover {
+						i {
+							color: $theme-color;
+						}
+					}
+					i {
+					    color: $title-color;
+						margin: 0;
+						&::before {
+							font-size: 12px;
+						}
+					}
+				}
+			}
+		}
+		.cart-bottom {
+		    margin-top: 10px;
+		    .cart-subtotal {
+			    text-align: left;
+				p {
+				    font-weight: 600;
+				    color: $title-color;
+				    margin-bottom: 10px;
+				}
+			}
+			.cart-action .button {
+			    padding: 10px 28px;
+			    border-radius: 3px;
+			    background: $title-color;
+			    color: $white-color;
+			    cursor: pointer;
+			    border: none;
+				line-height: 18px;
+				font-size: 12px;
+				text-transform: uppercase;
+				font-weight: 500;
+				position: relative;
+				@include transition($transition);
+				&:hover {
+					background: $primary-color;
+					box-shadow: 0px 5px 15px 0px rgba(93, 153, 19, 0.5);
+				}
+			}
+		}
+	}
+}
+
+// page header start here
+.page-header {
+	.page-header-item {
+		.post-content {
+			text-align: center;
+			h3 {
+				max-width: 400px;
+				line-height: 38px;
+			}
+		}
+	}
+}
+
+// breadcamp start here
+.breadcamp {
+	ul {
+		li {
+			padding: 4px;
+			a {
+				padding: 0 5px;
+				color: $title-color;
+				position: relative;
+				outline: none;
+				font-size: 15px;
+				font-weight: 500;
+				&:hover {
+					color: $primary-color;
+					&::after {
+						background: $primary-color;
+					}
+				}
+				&::after {
+					@extend %position;
+					width: 1px;
+					height: 15px;
+					top: 50%;
+					right: -5px;
+					transform: translateY(-50%) rotate(25deg);
+					background: $title-color;
+					@include transition($transition);
+				}
+				&.active {
+					color: $primary-color;
+					&:hover {
+						color: $primary-color;
+					}
+					&::after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

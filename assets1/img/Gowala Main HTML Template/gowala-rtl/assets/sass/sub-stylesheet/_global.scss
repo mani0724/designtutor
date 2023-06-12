@@ -1,0 +1,345 @@
+/* @@@@@@@@@@ global css start here @@@@@@ */
+.dd-icon-down {
+    &.active, &:hover {
+        &::after {
+            color: $primary-color;
+        }
+    }
+}
+
+.dd-icon-down {
+    position: relative;
+    &::after {
+        @extend %position;
+        content: "\f107" !important;
+        top: 53%;
+        right: -10px;
+        transform: translateY(-50%);
+        color: $desc-color;
+        font-family: Flaticon;
+        font-weight: 600;
+        font-size: 12px;
+    }
+}
+
+
+// m-menu start here
+.reg-head {
+    text-transform: uppercase;
+    padding: 14px 41px;
+    color: $theme-color;
+    background: transparent;
+    border-radius: 50px;
+    border: 2px solid $theme-color;
+    font-family: $frank;
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 0;
+    margin-left: 40px;
+    letter-spacing: 1.5px;
+    @include transition($transition);
+    &:hover {
+        background: $theme-color;
+        color: $white-color;
+    }
+}
+// dd-icon-right
+.dd-icon-right {
+    position: relative;
+}
+.padding-tb {
+	padding: 60px 0;
+	@include breakpoint(lg) {
+    	padding: 110px 0;
+    }
+}
+
+.btn {
+    padding: 12px 52px;
+	border-radius: 50px;
+	text-align: center;
+    font-size: 15px;
+    color: $white-color;
+    text-transform: capitalize;
+    @include transition($transition);
+    font-family: $roboto;
+    font-weight: 700;
+    box-shadow: 0px 5px 15px 0px rgba(102, 162, 27, .50);
+    background-image: linear-gradient(to right, #64a019, #6ca821, #73b128, #7bb92f, #83c236);
+    &:hover {
+        color: $white-color;
+        transform: translateY(-5px);
+    }
+}
+
+// scrollTop
+.scrollToTop{
+    position: fixed;
+    bottom: -30%;
+    right: 5%;
+    z-index: 9;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: $primary-color;
+    text-align: center;
+    border-radius: 3px;
+    color: $white-color;
+    @include transition($transition);
+    &:hover {
+        color: $white-color;
+        box-shadow: 0px 5px 15px 0px rgba(102, 162, 27, 0.5);
+        transform: translateY(-5px);
+    }
+    i {
+        &::before {
+            font-size: 12px;
+        }
+    }
+}
+
+.social-link-list {
+	margin-bottom: 0;
+	margin-left: 0;
+    @extend %flex;
+	li {
+		list-style: none;
+		a {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center !important;
+            color: #fff !important;
+            padding: 0 !important;
+            border-radius: 50%;
+            margin: 0 2px !important;
+            border: 2px solid transparent;
+            @include transition($transition);
+		}
+	}
+}
+
+.section-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 85px;
+    position: relative;
+    z-index: 1;
+	h2 {
+	    margin: 0;
+        display: block;
+        @include breakpoint(max-sm) {
+            font-size: 28px;
+            line-height: 36px;
+        }
+        span {
+            font-weight: 400;
+        }
+	}
+	p {
+        max-width: 500px;
+        margin: 0 auto;  
+		font-weight: 400;
+	    color: $desc-color;
+	}
+}
+.padding-x {
+    @include breakpoint(max-md) {
+        padding: 0 15px;
+    }
+}
+.rating {
+    @extend %flex;
+    justify-content: center;
+    li {
+        font-size: 12px;
+        margin: 0 2px;
+        color: $rating-color;
+    }
+}
+.bg-image-1 {
+    background: url(../../assets/css/bg-images/01.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg-image-2 {
+    background: url(../../assets/css/bg-images/02.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg-image-3 {
+    background: url(../../assets/css/bg-images/03.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg-image-4 {
+    background: url(../../assets/css/bg-images/04.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg-image-5 {
+    background: url(../../assets/css/bg-images/05.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg-image-6 {
+    background: url(../../assets/css/bg-images/06.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg-image-404 {
+    background: url(../../assets/css/bg-images/404.jpg) no-repeat;
+    background-position: center bottom;
+}
+.page-header-bg-1 {
+    background: url(../../assets/css/bg-images/page-header1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg-offer {
+    background: url(../../assets/css/bg-images/offer-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.offer-bg {
+    background: #f4f8fb;
+}
+
+
+
+
+// scrollbar effect
+div#scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #fff;
+}
+div#scrollbar::-webkit-scrollbar {
+    width: 6px;
+    background-color: #fff;
+}
+div#scrollbar::-webkit-scrollbar-thumb {
+    background-color: #fd3d6b;
+}
+
+
+// extend part start here
+%flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+%position {
+    position: absolute;
+    content: "";
+}
+
+%image-link {
+    a {
+        display: block;
+        img {
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
+
+
+// common social media
+.facebook {
+    background: $facebook;
+    &:hover {
+        background: $white-color;
+        border-color: $facebook !important;
+        i {
+            color: $facebook !important;
+        }
+    }
+}
+.twitter {
+    background: $twitter;
+    border-color: $twitter !important;
+    &:hover {
+        background: $white-color;
+        i {
+            color: $twitter !important;
+        }
+    }
+}
+.twitter-sm {
+    background: $twitter;
+    &:hover {
+        background: $white-color;
+        border-color: $twitter;
+        i {
+            color: $twitter !important;
+        }
+    }
+}
+.google {
+    background: $google;
+    &:hover {
+        background: $white-color;
+        border-color: $google !important;
+        i {
+            color: $google !important;
+        }
+    }
+}
+.linkedin {
+    background: $linkedin;
+    &:hover {
+        background: $white-color;
+        border-color: $linkedin !important;
+        i {
+            color: $linkedin !important;
+        }
+    }
+}
+.instagram {
+    background: $instagram;
+    &:hover {
+        background: $white-color;
+        border-color: $instagram !important;
+        i {
+            color: $instagram !important;
+        }
+    }
+}
+.tumblr {
+    background: $tumblr;
+    &:hover {
+        background: $white-color;
+        border-color: $tumblr !important;
+        i {
+            color: $tumblr !important;
+        }
+    }
+}
+.behance {
+    background: $behance;
+    &:hover {
+        background: $white-color;
+        border-color: $behance !important;
+        i {
+            color: $behance !important;
+        }
+    }
+}
+.youtube {
+    background: $youtube;
+    &:hover {
+        background: $white-color;
+        border-color: $youtube !important;
+        i {
+            color: $youtube !important;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .wow {
+        animation-name: none !important;
+        visibility: visible !important;
+    }
+}

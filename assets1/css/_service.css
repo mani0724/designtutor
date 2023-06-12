@@ -1,0 +1,8 @@
+.arc5-service-single-item {
+  position: relative; }
+  .arc5-service-single-item .arc5-title-area {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    background-color: #fff;
+    width: 90%; }

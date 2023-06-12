@@ -1,0 +1,279 @@
+body.rtl {
+    direction: rtl;
+}
+body.rtl .primary-menu .menu-area ul.main-menu li ul {
+    top: 100%;
+}
+body.rtl .primary-menu .menu-area ul.main-menu li > ul li ul {
+    top: 0;
+}
+body.rtl .sidebar-widget .widget-search form button,
+body.rtl .shop-cart .section-wrapper .cart-bottom .shiping-box .calculate-shiping .outline-select .select-icon,
+body.rtl .sidebar-widget .shop-widget .widget-wrapper .shop-menu li a.dd-icon-down::after,
+body.rtl .shop-single .product-details .post-content form .select-product i,
+body.rtl .menu .mobile-menu-area .mobile-menu-area-inner ul li a::after {
+    right: auto;
+    left: 0;
+}
+body.rtl .cart .cart-content .cart-item .cart-img,
+body.rtl .about.style-2 .about-left .section-wrapper ul li i,
+body.rtl .comment-form #wp-comment-cookies-consent,
+body.rtl .testimonial .section-wrapper .testimonial-slider .testi-item .testi-content .testimonial-author .author-thumb {
+    margin-right: 0;
+    margin-left: 14px;
+}
+body.rtl .cart .cart-content,
+body.rtl .cart .cart-content .cart-item .cart-btn {
+    left: 10px;
+    right: auto;
+}
+body.rtl blockquote:before,
+body.rtl .blog-page .section-wrapper .blog.blog-single .section-wrapper .post-item .post-inner .post-content .content-part .entry-content ul li::before,
+body.rtl .shop-single .review .review-content .description .post-item .post-content ul li::before,
+body.rtl .blog .section-wrapper .post-item .post-inner .post-content .content-left li .social-media-list {
+    left: auto;
+    right: 0;
+}
+body.rtl .blog .section-wrapper .post-item .post-inner .post-content .content-left li .social-media-list {
+    transform-origin: right;
+}
+body.rtl .cart .cart-content .cart-item .cart-des p,
+body.rtl .primary-menu .menu-area ul.main-menu li ul li a,
+body.rtl .portfolio .section-wrapper .section-header,
+body.rtl .blog .section-wrapper .post-item .post-inner .post-content .content-part,
+body.rtl .footer-top .post-item .footer-post li .post-content,
+body.rtl .footer-top .post-item .footer-location li .content-part,
+body.rtl .footer-top .post-item,
+body.rtl .about.style-2 .about-left,
+body.rtl .about.style-2 .about-left .section-header,
+body.rtl .histori .section-header,
+body.rtl .histori .section-wrapper .histori-slider .histori-item .histori-content,
+body.rtl .sidebar-widget h4,
+body.rtl .sidebar-widget .widget-rec-post .recent-post li .rec-content,
+body.rtl .blog-page .section-wrapper .blog.blog-single .section-wrapper .comment-respond .add-comment .title-border,
+body.rtl .blog-page .section-wrapper .blog.blog-single .section-wrapper .comments .title-border,
+body.rtl .blog-page .section-wrapper .blog.blog-single .section-wrapper .comments .comment-list .comment .com-content,
+body.rtl .contact .section-wrapper .contact-part,
+body.rtl .contact .section-wrapper .contact-info,
+body.rtl .service .service-left .section-header,
+body.rtl .service .service-left .section-wrapper,
+body.rtl .testimonial .section-wrapper .testimonial-slider .testi-item .testi-content .testimonial-author .author-name-des,
+body.rtl .testimonial .section-wrapper .testimonial-slider .testi-item .testi-content p,
+body.rtl .blog.style-2 .section-wrapper .blog-right .post-item .post-inner .post-thumb .post-content,
+body.rtl .blog.style-2 .section-wrapper .blog-left .post-item .post-inner .post-thumb .post-content,
+body.rtl .about.style-4 .about-content,
+body.rtl .service-single .service-post .post-content,
+body.rtl .shop-cart .section-wrapper .cart-top table thead tr th,
+body.rtl .shop-cart .section-wrapper .cart-top table tbody tr td,
+body.rtl .shop-cart .section-wrapper .cart-bottom .shiping-box,
+body.rtl .shop-page .shop-product-wrap .product-list-item .product-content,
+body.rtl .sidebar-widget .shop-widget .widget-wrapper .shop-menu li a,
+body.rtl .sidebar-widget .letest-product .widget-wrapper ul li .product-content,
+body.rtl .shop-single .review .review-content .review-showing .content li .post-content,
+body.rtl .shop-single .review .review-content .review-showing .client-review,
+body.rtl .shop-single .review .review-content.description-show .description,
+body.rtl .shop-single .product-details,
+body.rtl .menu .mobile-menu-area .mobile-menu-area-inner ul li a {
+    text-align: right;
+}
+body.rtl .header-section .header-top .htop-area .htop-right ul li:last-child a {
+    margin-right: 15px;
+}
+body.rtl .shop-cart .section-wrapper .cart-bottom .shiping-box .calculate-shiping button {
+    float: left;
+}
+body.rtl .header-section .header-top .htop-area .htop-left .htop-information li {
+    margin-right: 0;
+    margin-left: 40px;
+}
+body.rtl .blog .section-wrapper .post-item .post-inner .post-content .content-part .entry-header .entry-meta .byline a,
+body.rtl .blog .section-wrapper .post-item .post-inner .post-content .content-part .entry-header .entry-meta .posted-on a {
+    margin-right: 5px;
+    margin-left: 0;
+}
+body.rtl .primary-menu .menu-area ul.main-menu li ul li,
+body.rtl .header-section .header-bottom .search-cart,
+body.rtl .shop-single .review .review-content .description .post-item .post-content ul li {
+    padding-left: 0;
+    padding-right: 30px;
+}
+body.rtl .primary-menu .menu-area ul.main-menu li ul li ul {
+    left: auto;
+    right: 100%;
+}
+body.rtl .portfolio .section-wrapper .section-header .title p,
+body.rtl .about.style-2 .about-left .section-header p,
+body.rtl .histori .section-header,
+body.rtl .cart-plus-minus {
+    margin-right: 0;
+}
+body.rtl .footer-top .post-item .footer-location li .icon-part {
+    padding-left: 15px;
+}
+body.rtl .footer-top .post-item .footer-post li .post-thumb {
+    margin-right: 0;
+    margin-left: 17px;
+}
+body.rtl .histori .section-wrapper .achievement .histori-navigation .histori-button-prev i,
+body.rtl .histori .section-wrapper .achievement .histori-navigation .histori-button-next i,
+body.rtl i.fas.fa-phone-volume {
+    transform: rotate(180deg);
+}
+body.rtl .breadcamp ul li a::after {
+    left: -5px;
+    right: auto;
+    transform: translateY(-50%) rotate(-25deg);
+}
+body.rtl .sidebar-widget h4::after,
+body.rtl .blog-page .section-wrapper .blog.blog-single .section-wrapper .comment-respond .add-comment .title-border::after,
+body.rtl .blog-page .section-wrapper .blog.blog-single .section-wrapper .comments .title-border::after,
+body.rtl .shop-single .review .review-content .review-showing .client-review .review-form .review-title h5::after {
+    right: 55px;
+    left: auto;
+}
+body.rtl .sidebar-widget .widget-rec-post .recent-post li .rec-content,
+body.rtl .shop-single .review .review-content .review-showing .content li .post-content .entry-meta .posted-on a {
+    padding-left: 10px;
+    padding-right: 0;
+}
+body.rtl .blog-page .section-wrapper .blog.blog-single .section-wrapper .post-item .post-inner .post-content .content-part .entry-content ul li,
+body.rtl .about.style-4 .about-content .about-body ul li .ab-right,
+body.rtl .shop-cart .section-wrapper .cart-top table tbody tr td.product-item .p-content,
+body.rtl .shop-page .shop-product-wrap .product-list-item .product-content,
+body.rtl .sidebar-widget .letest-product .widget-wrapper ul li .product-content,
+body.rtl .shop-single .product-details .post-content form .select-product select,
+body.rtl .shop-single .review .review-content .review-showing .content li .post-content {
+    padding-right: 20px;
+    padding-left: 0;
+}
+body.rtl .blog.style-2 .section-wrapper .blog-left .post-item .post-inner .post-thumb .post-content .meta-post a {
+    margin-right: 10px;
+    margin-left: 0;
+}
+body.rtl .service-single .service-post .post-content ul li i {
+    margin-left: 10px;
+    margin-right: 0;
+}
+body.rtl .fa-reply-all:before {
+    content: "\f064";
+    margin-left: 3px;
+}
+body.rtl .fa-angle-double-left:before {
+    content: "\f101";
+}
+body.rtl .fa-angle-double-right:before {
+    content: "\f100";
+}
+body.rtl .service .service-left .section-wrapper ul li i {
+    margin-left: 15px;
+    margin-right: 0;
+}
+body.rtl .banner.style-1 .carousel.slide .carousel-inner .carousel-item .shape {
+    right: 60%;
+}
+body.rtl .footer-top .post-item .footer-gellary {
+    justify-content: flex-start;
+}
+body.rtl .testimonial.style-2 .section-wrapper .testimonial-slider .testi-item .testi-content p,
+body.rtl .testimonial.style-2 .section-wrapper .testimonial-slider .testi-item .testi-content .testimonial-author .author-name-des,
+body.rtl .banner.style-1 .carousel.slide .carousel-inner .carousel-item .slider-content.center .slider-content-inner {
+    text-align: center;
+}
+body.rtl .shop-cart .section-wrapper .cart-bottom .cart-checkout-box .coupon input[type="submit"] {
+    margin-left: 0;
+    margin-right: -10px;
+}
+body.rtl .about.style-4 .about-content .about-body {
+    max-width: 100%;
+}
+body.rtl .team-member.single-page .section-wrapper .team-single .team-single-content .contact-info {
+    text-align: right;
+}
+body.rtl .banner.style-1.style-2 .carousel.slide .carousel-inner .carousel-item.active .slider-content .slider-content-inner img {
+    margin-right: 0;
+}
+body.rtl .dd-icon-down::after {
+    right: auto;
+    left: -10px;
+}
+body.rtl .banner.style-1.style-3 .carousel.slide .carousel-inner .carousel-item .shape3, body.rtl .banner.style-1.style-3 .carousel.slide .carousel-inner .carousel-item .shape5 {
+    right: auto;
+    left: 0;
+}
+body.rtl .banner.style-3 .carousel.slide .carousel-inner .carousel-item .slider-content.left {
+    right: auto;
+    left: 5%;
+}
+body.rtl .banner.style-1.style-3 .carousel.slide .carousel-inner .carousel-item .shape {
+    right: auto;
+    left: 60%;
+}
+body.rtl .about.style-5 .section-header {
+    text-align: right;
+    margin-right: 0;
+}
+body.rtl .home-4 .post-item .post-inner .post-content {
+    padding-left: 0px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+
+
+@media (min-width: 576px) {
+    body.rtl .blog .section-wrapper .post-item .post-inner .post-content .content-left {
+        border-right: none;
+        border-left: 1px solid #ededed;
+    }
+    body.rtl blockquote {
+        padding: 0px 55px 0px 0px;
+    }
+    body.rtl .blog-page .section-wrapper .blog.blog-single .section-wrapper .post-item .post-inner .post-content .tags-section {
+        padding: 20px 77px 20px 20px;
+    }
+    body.rtl .blog .section-wrapper .post-item .post-inner .post-content .content-left li .social-media-list {
+        transform-origin: top;
+    }
+}
+@media (min-width: 768px) {
+    body.rtl .featured-recipe .section-wrapper .post-item .post-item-inner .post-content {
+        text-align: right;
+        padding-left: 0;
+        padding-right: 30px;
+    }
+}
+@media (min-width: 992px) {
+    body.rtl .banner.style-1 .carousel.slide .carousel-inner .carousel-item .slider-content .slider-content-inner {
+        text-align: right;
+    }
+    body.rtl .blog.style-2 .section-wrapper .post-item:first-child .post-inner,
+    body.rtl .blog.style-3 .section-wrapper .post-item:first-child .post-inner {
+        margin-left: 0;
+    }
+    body.rtl .blog.style-2 .section-wrapper .blog-left {
+        margin-left: 0;
+    }
+    body.rtl .blog.style-2 .section-wrapper .blog-right {
+        margin-right: 0;
+    }
+    body.rtl .sidebar-widget {
+        margin: 0;
+        margin-left: -15px;
+    }
+    body.rtl .offer-section.style-2 .post-thumb {
+        text-align: right;
+        margin-left: 0;
+    }
+    body.rtl .testimonial.style-3 .section-wrapper .testimonial-slider .swiper-container.gallery-top .testi-item .testi-content p {
+        text-align: center;
+    }
+}
+@media (min-width: 1200px) {
+    body.rtl .about.style-4 .about-content {
+        padding: 84px 60px;
+    }
+    body.rtl .about.style-5 .left-thumb img {
+        float: left;
+    }
+}
+  

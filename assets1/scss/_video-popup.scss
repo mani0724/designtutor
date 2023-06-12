@@ -1,0 +1,64 @@
+//Video Popup 
+.arc5-video-popup {
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    .arc5-video-overlay {
+        background-color: rgba(0,0,0,0.546);
+        padding: 110px 0; 
+    }
+    .arc5-title-area {
+        text-align: center;
+        margin-bottom: 80px;
+        @include small-screen {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #fff;
+        }
+    }
+    .arc5-video-pera-text {
+        color: #fff;
+        @include small-screen {
+            text-align: center;
+        }
+    }
+    .arc5-video-play-btn {
+        padding-right: 60px;
+        text-align: center;
+        @include small-screen {
+            margin-top: 30px;
+        }
+        &::after {
+            content: ''; 
+            display: block; 
+            clear: both;
+        }
+        a {
+            margin-right: 10px;
+            background-color: $primary-color; 
+            color: #fff; 
+            width: 60px; 
+            height: 60px; 
+            text-align: center; 
+            line-height: 60px; 
+            border-radius: 50%;
+            animation: ripple-animation infinite 2s linear;
+            float: left;
+            @include small-screen {
+                float: none;
+                display: inline-block;
+            }
+        }
+        span {
+            color: #fff;
+            font-family: $heading-font; 
+            text-transform: uppercase;
+            overflow: hidden;
+            @include medium-screen {
+                margin-top: 15px;
+                display: inline-block;
+            }
+        }
+    }
+}

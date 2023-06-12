@@ -1,0 +1,86 @@
+//Roadmap
+.arc5-roadmap-section {
+    background-color: #fff;
+    overflow: visible; 
+    .arc5-roadmap-container {
+        padding: 115px 0 110px 0;
+        margin-top: -70px;
+        background-color: #fff;
+        position: relative; 
+        z-index: 1;
+        @include medium-screen {
+            margin-top: 0;
+        }
+        @include small-screen {
+            padding: 80px 0;
+        }
+    }
+    .arc5-roadmap-title {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+}
+.arc5-roadmap-column {
+    padding: 50px 30px;
+    border: 1px solid #c8cac1;
+    text-align: center;
+    margin-bottom: 30px;
+    .roadmap-column-top {
+        position: relative;
+        margin-bottom: 60px;
+        .roadmap-icon {
+            width: 90px; 
+            height: 90px; 
+            background-color: $primary-color; 
+            text-align: center;
+            color: #fff;
+            margin: 0 auto;
+            span {
+                font-size: 50px; 
+                line-height: 103px;
+            }
+        }
+        img.roadmap-bg-shape {
+            position: absolute; 
+            bottom: -30px;
+            left: 0; 
+            width: 100%;
+            z-index: -1;
+        }
+    }
+    .roadmap-column-txt {
+        h4 {
+            margin-bottom: 20px;
+        }
+    }
+    .roadmap-show-more {
+        width: 64px; 
+        height: 64px;
+        background-color: #c8cac1;
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        display: inline-block; 
+        margin: auto;
+        transform: rotate(20deg);
+        position: relative;
+        z-index: 1;
+        margin-top: 30px;
+        span {
+            position: absolute; 
+            top: 50%; 
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-20deg);
+        }
+        &::before {
+            content: ''; 
+            width: 63px; 
+            height: 63px;
+            background-color: #fff; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%);
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+            position: absolute;
+            z-index: -1;
+        }
+    }
+}

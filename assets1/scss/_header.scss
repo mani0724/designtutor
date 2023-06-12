@@ -1,0 +1,143 @@
+.header-main-menu {
+	.dropdown {
+		position: relative;
+		&:before {
+			top: 0;
+			right: -15px;
+			content: '+';
+			font-size: 18px;
+			font-weight: 900;
+			position: absolute;
+			transition: .3s all ease-in-out;
+		}
+		&:hover {
+			.dropdown-menu {
+				transform: scaleY(1);
+			}
+		}
+	}
+	.dropdown-menu {
+		left: 0;
+		top: 48px;
+		z-index: 100;
+		margin: 0px;
+		padding: 0px;
+		height: auto;
+		width: 200px;
+		display: block;
+		border: none;
+		border-radius: 0;
+		overflow: hidden;
+		position: absolute;
+		transform: scaleY(0);
+		background-color: #fff;
+		transition: all .4s ease-in-out;
+		transform-origin: center top 0;
+		background-color: #000000;
+		li {
+			display: block;
+			margin: 0 !important;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+		a {
+			width: 100%;
+			display: block;
+			padding: 10px 20px 10px !important;
+			color: #fff !important;
+			font-weight: 400 !important;
+			font-size: 15px !important;
+			&:hover {
+				color: #fff;
+				background-color: $primary-color;
+			}
+		}
+	}
+}
+
+.header-style-five {
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	padding-top: 45px;
+	position: absolute;
+	.dropdown {
+		&:before {
+			color: #fff;
+			right: -12px;
+			font-size: 16px;
+		}
+		&:hover {
+			&:before {
+				transform: rotate(130deg);
+			}
+		}
+	}
+	.main-navigation-area {
+		padding-top: 15px;
+		display: inline-block;
+		li {
+			margin-left: 30px;
+			a {
+				color: #fff;
+				font-weight: 700;
+				padding-bottom: 30px;
+				font-family: $heading-font;
+			}
+		}
+	}
+	.header-cta-btn {
+		height: 48px;
+		width: 170px;
+		font-weight: 700;
+		line-height: 48px;
+		margin-left: 50px;
+		font-family: $heading-font;
+		background-color: $primary-color;
+		a {
+			color: #fff;
+			width: 100%;
+			display: block;
+		}
+	}
+	&.sticky-on {
+		padding: 15px 0px;
+		background-color: $body-color;
+	}
+}
+.arc5-header {
+	.main-navigation-area {
+		li {
+			a {
+				font-weight: 500; 
+			}
+		}
+	}
+	.header-cta-btn {
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+	@include small-screen {
+		padding-top: 15px;
+	}
+}
+/*Stickey header*/
+/*----------------------------------------------------*/
+.sticky-on {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	-webkit-animation-timing-function: ease;
+	animation-timing-function: ease;
+	-webkit-transition: .7s all ease-in-out;
+	-o-transition: .7s all ease-in-out;
+	transition: .7s all ease-in-out;
+}

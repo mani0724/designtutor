@@ -1,0 +1,55 @@
+//Arc5-Blog
+.arc5-blog-section {
+    padding: 0px 0px 80px 0;
+    .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+.arc5-blog-column {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    &:hover {
+        img {
+            transform: scale(1);
+        }
+    }
+    img {
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+    &::before {
+        content: '';
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+        background-color: rgba(0,0,0,0.3);
+        z-index: 1;
+    }
+    .arc5-blog-date {
+        background-color: $primary-color; 
+        padding: 8px 20px; 
+        text-align: center;
+        color: #fff; 
+        text-transform: uppercase;
+        font-family: $heading-font;
+        position: absolute; 
+        top: 15px; 
+        right: 15px;
+        z-index: 2;
+    }
+    .arc5-title-area {
+        position: absolute; 
+        bottom: 0;
+        left: 0; 
+        width: 100%; 
+        padding: 20px;
+        z-index: 2;
+        h4 {
+            color: #fff;
+        }
+    }
+}

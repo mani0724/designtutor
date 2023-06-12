@@ -1,0 +1,154 @@
+//Footer 
+.arc5-footer-section {
+    margin-top: 100px;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    .arc5-overlay-bg {
+        background-color: rgba(50, 50, 50, 0.8);
+        padding-bottom: 30px;
+    }
+    .arc5-f-top-shape {
+        background-color: #fff; 
+        height: 80px; 
+        width: 100%;
+        margin-top: 1px;
+    }
+    .arc5-footer-copyright {
+        margin-top: 30px;
+        color: #fff;
+        p {
+            @include medium-screen {
+                margin-bottom: 10px;
+            }
+        }
+        .arc5-copyright-links {
+            text-align: right;
+            @include medium-screen {
+                text-align: left;
+            }
+            a {
+                @include medium-screen {
+                    margin-right: 15px;
+                }
+                + a {
+                    margin-left: 15px;
+                    @include medium-screen {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.arc5-f-top {
+    padding: 20px;
+    .arc5-f-top-content {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        padding: 30px 20px;
+        justify-content: space-between;
+        margin-top: -200px;
+        @include portrait-phone {
+            display: block;
+        }
+        .arc5-title-area {
+            width: 360px;
+            @include portrait-phone {
+                width: auto; 
+                margin-bottom: 20px;
+            }
+            span {
+                color: #fff;
+                font-weight: 400;
+                font-family: $body-font;
+                letter-spacing: 0.2em;
+            }
+            h3 {
+                color: #fff;
+                font-weight: 400;
+            }
+        }
+        .arc5-template-btn {
+            a {
+                background-color: transparent; 
+                border: 1px solid #fff;
+                color: #fff;
+                transition: 0.3s;
+                &:hover {
+                    background-color: #000; 
+                    border: 1px solid #000;
+                }
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.arc5-footer-bottom {
+    margin-top: 60px;
+}
+.arc5-footer-widget {
+    margin-bottom: 30px;
+    h5 {
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    p {
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    .arc5-footer-social {
+        a {
+            color: #fff; 
+            margin-right: 10px;
+            transition: 0.3s;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+    .arc5-footer-nav {
+        ul {
+            li {
+                + li {
+                    margin-top: 8px;
+                }
+                a {
+                    color: #fff; 
+                    text-transform: capitalize; 
+                }
+            }
+        }
+    }
+    .arc5-ft-form {
+        width: 100%; 
+        position: relative;
+        input[type="email"] {
+            width: 100%; 
+            background-color: transparent;
+            padding: 12px 18px;
+            padding-right: 50px;
+            border: 1px solid #fff;
+            font-family: $body-font;
+            color: #fff;
+            &::placeholder {
+                color: #fff;
+            }
+        }
+        .submit-btn {
+            position: absolute; 
+            top: 50%; 
+            right: 12px;
+            transform: translateY(-50%);
+            color: #fff; 
+            border: none;
+            background-color: transparent;
+        }
+    }
+
+}
