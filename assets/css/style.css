@@ -2488,16 +2488,16 @@ background-color: #fefefe; }
     .service-section .service-content .col-lg-4:nth-child(2) .service-inner-box {
       background-color: #323232; }
       .service-section .service-content .col-lg-4:nth-child(2) .service-inner-box .service-text h3, .service-section .service-content .col-lg-4:nth-child(2) .service-inner-box .service-text p {
-        color: #fff; }
+        color: #000; }
     .service-section .service-content .col-lg-4:nth-child(3) .service-inner-box {
-      background-color: #cbbc9d; }
+      background-color: #000; }
       .service-section .service-content .col-lg-4:nth-child(3) .service-inner-box .service-serial-number {
         -webkit-text-stroke-color: #fff; }
       .service-section .service-content .col-lg-4:nth-child(3) .service-inner-box .service-text h3, .service-section .service-content .col-lg-4:nth-child(3) .service-inner-box p,
       .service-section .service-content .col-lg-4:nth-child(3) .service-inner-box .service-icon i {
         color: #fff; }
       .service-section .service-content .col-lg-4:nth-child(3) .service-inner-box:after {
-        background-color: #323232; }
+        background-color: #fff; }
 
 .service-inner-box {
   padding: 48px 40px;
@@ -2565,12 +2565,12 @@ background-color: #fefefe; }
   transition: none; }
 
 .service-content-2 .service-inner-box:hover {
-  background-color: #323232; }
+  background-color: #fff; }
   .service-content-2 .service-inner-box:hover:after {
     display: none; }
   .service-content-2 .service-inner-box:hover .service-text h3, .service-content-2 .service-inner-box:hover p,
   .service-content-2 .service-inner-box:hover .service-icon i {
-    color: #fff; }
+    color: #000; }
 
 .service-content-2 .col-lg-4:nth-child(3) .service-inner-box {
   z-index: 1; }
@@ -2585,6 +2585,9 @@ background-color: #fefefe; }
     position: absolute;
     background-size: cover;
     background-image: url(../img/banner/srbg.png); }
+
+   
+ 
 
 /*Service Page (Servcie Section)*/
 /*----------------------------------------------------*/
