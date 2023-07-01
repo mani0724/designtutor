@@ -1011,7 +1011,8 @@ background-color: #fefefe; }
   color: #a3cc01; }
 
 .about-page-faq .faq_area h3 button:after {
-  background-color: #a3cc01; }
+  background-color: #a3cc01;
+display: none; }
 
 .intro-video-section.about-page-intro-video .background-overlay {
   background-color: #fff; }
