@@ -24,6 +24,46 @@
 		<link rel="stylesheet" href="assets1/css/odometer-theme-default.css">
 		<link rel="stylesheet" href="assets1/css/rs6.css">
 		<link rel="stylesheet" href="assets1/css/style.css">
+	
+	<style>
+#more {display: none;}
+
+		#popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  overflow-y: auto;
+}
+
+#popup-box {
+  background-color: #fff;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+}
+
+#close-btn {
+  margin-top: 10px;
+}
+
+#agree-checkbox:checked ~ #close-btn {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+#agree-checkbox:checked:disabled ~ #close-btn {
+  background-color: #ccc;
+  color: #000;
+}
+
+	</style>
 	</head>
 
 	<body class="arc5-body">
@@ -1534,6 +1574,48 @@
 		</div>
 	</section>
 
+
+	<div id="popup-container">
+		<div id="popup-box">
+	
+		<h2>Terms and Conditions</h2>
+<p>
+
+
+
+
+
+
+
+
+
+
+	<strong>Introduction:</strong><br>
+As Design Tutor, an online educational platform providing architecture-related programs, state that these terms and conditions govern the use of our website and participation in our courses.<br>
+<strong>User Conduct:</strong><br>
+The expected behaviour of users on our website shall be purely academic and professional and the users shall refrain from posting offensive or inappropriate content.<br>
+We wish to highlight that any violation of these terms may result in the termination of user access.<span id="dots">...</span><span id="more">
+Intellectual Property:
+The ownership and protection of intellectual property rights, such as copyrights, related to the content on our website and course materials shall remain with “Design Tutor”.
+We prohibit users from reproducing or distributing our materials without explicit permission.
+Limitation of Liability
+Design Tutor and its founders, are not liable for any direct or indirect damages incurred by users while using the website data or participating in the courses.
+We hereby state that the courses are provided "as is," and do not guarantee specific outcomes or results.
+Termination:
+We shall terminate a user's access to the website or courses, under circumstances such as violation of the terms and conditions or disruptive behaviour.
+Governing Law and Jurisdiction:
+The governing law and jurisdiction that apply to these terms and conditions shall be Bangalore Jurisdiction.
+</span></p>
+<button onclick="myFunction()" id="myBtn">Read more</button><br>
+
+		  <input type="checkbox" id="agree-checkbox" disabled>
+		  <label for="agree-checkbox">I agree to the terms and conditions</label>
+		  <button id="close-btn" disabled>Close</button>
+		</div>
+	  </div>
+	 
+	  
+
 <!-- End of footer  sectiontart of contact content section
 	============================================= -->
 
@@ -1555,6 +1637,49 @@
 		<script src="assets1/js/rbtools.min.js"></script>
 		<script src="assets1/js/rs6.min.js"></script>
 		<script src="assets1/js/script.js"></script>
+
+		<script>
+			window.addEventListener('load', function() {
+  var popupContainer = document.getElementById('popup-container');
+  var closeBtn = document.getElementById('close-btn');
+  var agreeCheckbox = document.getElementById('agree-checkbox');
+
+  function enableCloseBtn() {
+    closeBtn.disabled = !agreeCheckbox.checked;
+  }
+
+  agreeCheckbox.addEventListener('change', enableCloseBtn);
+
+  closeBtn.addEventListener('click', function() {
+    popupContainer.style.display = 'none';
+  });
+
+  setTimeout(function() {
+    popupContainer.style.display = 'flex';
+    agreeCheckbox.removeAttribute('disabled');
+    enableCloseBtn();
+  }, 4000);
+});
+
+		</script>
+		<script>
+			function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+		</script>
+
 
 
 		<script type="text/javascript">

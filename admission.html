@@ -172,30 +172,27 @@
                         
                         <div class="row form-group">
                             <div class="col-lg-4">
-                                <label>
-                                    First name</label>
+								<label for="name">Name</label>
                             </div>
                             <div class="col-lg-8">
-                                <input type="text" name="first_name" class="form-control" required>
+								<input type="text" id="name" name="name" required>
                             </div>
                         </div>
                       
                         <div class="row form-group">
                             <div class="col-lg-4">
-                                <label>
-                                    Email address</label>
+								<label for="email">Email</label>
                             </div>
                             <div class="col-lg-8">
-                                <input type="email" name="email" class="form-control" required>
+								<input type="email" id="email" name="email" required>
                             </div>
                         </div>
                         <div class="row form-group">
                             <div class="col-lg-4">
-                                <label>
-                                    Phone</label>
+                                <label for="Phone">Phone</label>
                             </div>
                             <div class="col-lg-8">
-                                <input type="text" name="phone" class="form-control">
+								<input type="number" id="phone" name="phone" maxlength="10" required>
                             </div>
                         </div>
                       
@@ -204,17 +201,15 @@
                        
                         <div class="row form-group">
                             <div class="col-lg-4">
-                                <label>
-                                    Education</label>
+								<label for="education">Education</label>
                             </div>
                             <div class="col-lg-8">
-                                <input type="text" name="education" class="form-control" required>
-                            </div>
+								<input type="text" id="education" name="education" required>    
+							</div>
                         </div>
 						<div class="row form-group">
                             <div class="col-lg-4">
-                                <label>
-                                    ID Attachment</label>
+								<label for="ID attachment">ID attachment</label>
                             </div>
                             <div class="col-lg-8">
                                
@@ -225,8 +220,7 @@
 
                         <div class="row form-group">
                             <div class="col-lg-4">
-                                <label>
-                                    Message</label>
+								<label for="message">Message</label>
                             </div>
                             <div class="col-lg-8">
                                 <textarea class="form-control" name="message" placeholder="Any other comments?" rows="3"></textarea>
@@ -539,6 +533,21 @@
 			</div>
 		</div>
 	</section>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+  var form = document.getElementById('admissionform');
+  var mobileInput = document.getElementById('phone');
+
+  form.addEventListener('submit', function(event) {
+    if (mobileInput.value.length !== 10) {
+      event.preventDefault();
+      alert('Please enter a 10-digit mobile number.');
+    }
+  });
+});
+
+	</script>
 
 
 	<script src="assets/js/jquery.min.js"></script>
